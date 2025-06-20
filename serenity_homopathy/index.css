@@ -1,0 +1,267 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  header {
+    background-color: #197278;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background-image: url('https://images.unsplash.com/photo-1600423115361-4b6b18c2f8ab?auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #197278;
+    margin-bottom: 30px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f0f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #197278;
+  }
+  
+  footer {
+    background-color: #197278;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #197278;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Doctor Profile */
+  .doctors-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  .doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .doctor-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .doctor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .doctor-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0 5px;
+  }
+  
+  .doctor-card p {
+    color: #777;
+    font-size: 0.95em;
+  }
+  #blog .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  #blog .card-title { font-size: 1.1rem; color: #2c3e50; }
+  #blog .card-text { color: #555; }
+  article h2 { margin-top: 2rem; color: #333; }
+  article img { max-width: 100%; height: auto; }
+  
+  
+  /* Testimonials */
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .testimonial {
+    background: #fff;
+    padding: 20px;
+    border-left: 5px solid #00695c;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .testimonial p {
+    font-style: italic;
+  }
+  
+  .testimonial h4 {
+    text-align: right;
+    margin-top: 15px;
+    color: #444;
+  }
+
+/* Contact Section */
+#contact {
+  background-color: #f8f9fa;
+}
+#contact h2 {
+  color: #2c3e50;
+}
+
+/* Form Styling */
+#contactForm {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+#contactForm .form-control:focus {
+  border-color: #3366cc;
+  box-shadow: 0 0 0 0.2rem rgba(51, 102, 204, 0.25);
+}
+
+/* Submission Feedback */
+.form-feedback {
+  font-size: 0.9rem;
+}
+
+/* Map Container */
+.ratio {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+#about {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+
+  
